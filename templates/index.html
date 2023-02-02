@@ -1,0 +1,85 @@
+{%extends "base.html"%}
+
+{% block title %}Home{% endblock %}
+{%block homeActive%}active{%endblock%}
+{%block content%}
+
+<div class="row hero grey-bg rounded-bottom-5">
+  <div id="hero-carousel" class="carousel slide  col-md-8" style="height:500px;" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="static/images/school-building.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="static/images/library.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="static/images/studentgrad.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="static/images/classroom.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="col-md-4 d-flex">
+    <div class="px-3 align-self-center">
+      <h1 class="display-4 fw-bold pt-5">Demo School</h1>
+      <div class="lead">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone... </div>
+      <a href="/profile">
+        <button type="button" class="btn rounded-pill text-light dark-blue-bg py-2 px-3 mt-3 fw-bold">
+          View Profile <i class="bi bi-person-fill"></i></button>
+      </a>
+    </div>
+  </div>
+</div>
+<section class="my-5 container">
+  <h3 class="fw-bold">WHO WE ARE</h3>
+  <div class=" about-info py-5 px-3 row mx-auto ">
+    <div class="card p-2 col shadow bg-half-grad rounded-4">
+      <div class="card-title text-center py-3 dark-blue-bg text-light display-1 fw-bold rounded-4">
+        <i class="bi bi-book-half"></i>
+      </div>
+      <div class="card-body p-2">
+        <p class="fw-bold fs-3 my-0">Card Title</p>
+        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+        
+      </div>
+    </div>
+    <div class="card p-2 col shadow bg-half-grad rounded-4 mx-5">
+      <div class="card-title text-center py-3 dark-blue-bg text-light display-1 fw-bold rounded-4">
+        <i class="bi bi-pencil"></i>
+      </div>
+      <div class="card-body p-2">
+        <p class="fw-bold fs-3 my-0">Card Title</p>
+        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+        
+      </div>
+    </div>
+    <div class="card p-2 col shadow bg-half-grad rounded-4">
+      <div class="card-title text-center py-3 dark-blue-bg text-light display-1 fw-bold rounded-3">
+        <i class="bi bi-pc-display-horizontal"></i>
+      </div>
+      <div class="card-body p-2 mb-5">
+        <p class="fw-bold fs-3 my-0">Card Title</p>
+        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system.
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+{%endblock%}

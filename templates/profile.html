@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{%block title%}Profile{%endblock%}
+{%block profileActive%}active{%endblock%}
+{% block content %}
+<div class="container my-5 pt-5">
+
+    <div class="card shadow text-center">
+        <div class="card-body lead fw-bold py-2">Student Profile</div>
+    </div>
+    <div class="row py-5 mx-auto ">
+        <div class="card p-2  col-md-3 shadow " style="height:500px">
+            <div class="profile-img">
+                <img class="card-img-top " src="/static/images/joshua.jpg" alt="Card image">
+            </div>
+            <div class="card-body px-0 py-3 ">
+                <ul class="list-group list-group-flush text-left" style="font-size: 0.8rem;">
+                    <li class="list-group-item px-1"><strong>Surname:</strong> AJORGBOR</li>
+                    <li class="list-group-item px-1"><strong>First Name:</strong> JOSHUA</li>
+                    <li class="list-group-item px-1"><strong>Other Name:</strong> EHIGBAI</li>
+                    <li class="list-group-item px-1"><strong>Matric Number:</strong> vug/csc/20/4887 </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 ">
+            <ul class="list-group shadow">
+                <li class="list-group-item py-3"><strong>E-Mail</strong> <br /> joshuaajorgbor@gmail.com </li>
+                <li class="list-group-item py-3"><strong>Gender</strong> <br /> Male</li>
+                <li class="list-group-item py-3"><strong>Date Of Birth</strong> <br /> NIL</li>
+                <li class="list-group-item py-3"><strong>Religion</strong> <br /> Christain/Non Catholic </li>
+                <li class="list-group-item py-3"><strong>Address</strong> <br /> NIL</li>
+                <li class="list-group-item py-3"><strong>Matric Number</strong> <br /> vug/csc/20/4887 </li>
+
+            </ul>
+        </div>
+        <div class="col-12 mt-5 ">
+            <ul class="list-group shadow">
+
+                <li class="list-group-item py-3">
+                    <h3 class="mb-5">Sposor Details</h3>
+                    <strong>Title</strong> <br /> MR
+                </li>
+                <li class="list-group-item py-3"><strong>Surname</strong> <br /> Doe</li>
+                <li class="list-group-item py-3"><strong>First Name</strong> <br /> John </li>
+                <li class="list-group-item py-3"><strong>E-mail</strong> <br /> johndoe@gmail.com</li>
+                <li class="list-group-item py-3"><strong>Address</strong> <br /> NIL</li>
+                <li class="list-group-item py-3"><strong>Phone Number</strong> <br /> 0902231123</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
